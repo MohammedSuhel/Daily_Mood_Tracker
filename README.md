@@ -1,4 +1,5 @@
-Technology Used: HTML,CSS,JS <br/>
+Technologies Used: HTML,CSS,JS <br/>
+
 
 
 
