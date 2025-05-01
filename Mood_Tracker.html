@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Mood Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" id="tracker">
+    <button class="toggle-theme" onclick="toggleTheme()">Toggle Dark Mode</button>
+    <h1>Select Your Mood</h1>
+    <div class="moods">
+      <div class="mood" onclick="setMood('Happy', '--happy-color')">
+        <span>😊</span>
+        <label>Happy</label>
+      </div>
+      <div class="mood" onclick="setMood('Sad', '--sad-color')">
+        <span>😢</span>
+        <label>Sad</label>
+      </div>
+      <div class="mood" onclick="setMood('Excited', '--excited-color')">
+        <span>🤩</span>
+        <label>Excited</label>
+      </div>
+      <div class="mood" onclick="setMood('Calm', '--calm-color')">
+        <span>😌</span>
+        <label>Calm</label>
+      </div>
+    </div>
+    <div class="history">
+      <h2>Mood History</h2>
+      <ul id="mood-history"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
